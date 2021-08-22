@@ -563,6 +563,7 @@
 }
 #servicios-index .servicios-content .card .card-body p {
   height: 80px;
+  width: auto;
 }
 #servicios-index .servicios-content .card .card-body p a {
   background-color: #0b090a;
