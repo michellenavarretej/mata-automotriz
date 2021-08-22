@@ -1,10 +1,10 @@
 # prueba-mata-automotriz
 <h1 align="center">Hi 😄, I'm Michelle Navarrete</h1>
-<h3 align="center">A passionate web development student from Chile</h3>
+<h3 align="center">A passionate Front End Development student from Chile</h3>
 
 - 🔭 I’m currently working on **Mata Automotriz**
 
-- 🤓 I’m currently learning **Front End Development, Java Script and React**
+- 🤓 I’m currently learning **Web Development, Java Script and React**
 
 - 📫 How to reach me **michellenavarretej@gmail.com**
 
