@@ -562,7 +562,7 @@
   text-align: center;
 }
 #servicios-index .servicios-content .card .card-body p {
-  width: 80px;
+  height: 80px;
 }
 #servicios-index .servicios-content .card .card-body p a {
   background-color: #0b090a;
