@@ -1,0 +1,534 @@
+/* Header-Index */
+@import '../base/lists';
+@import '../base/extend';
+
+#header-index {
+    padding: 0 10px;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: $align;
+    justify-content: $align;
+    text-align: $align;
+    color: nth($colores, 2);
+
+    .header-video-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: nth($colores, 3);        
+        }
+
+        video {
+            min-height: 100%;
+            min-width: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .header-content {
+        z-index: 0;
+
+        .h1-index {
+            color: nth($colores, 2);
+
+            
+            .Mata-index {
+                font-family: nth($fonts, 1);
+                font-size: 60px;
+            }
+
+            .Automotriz-index {
+                font-family: nth($fonts, 2);
+                font-size: 50px;
+                font-weight: lighter;
+            }
+        }
+
+        .h2-index {
+            color: nth($colores, 2);
+            font-family: nth($fonts, 2);
+            font-size: 1.8em;
+            padding-bottom: 20px;
+            font-weight: lighter;
+        }
+
+        nav {
+            font-family: nth($fonts, 2);
+            color: nth($colores, 2);
+            text-align: $align;
+
+            ul {
+                padding-left: 0px;
+
+                li {
+                    display: inline;
+                    padding: 10px;
+                
+                    a {
+                        line-height: 1.5;
+                        letter-spacing: 3px;
+                        font-family: nth($fonts, 2);
+                        color: nth($colores, 2);
+                        text-align: left;
+                        font-size: 1.2em;
+                        text-decoration: none;
+                        font-weight: 900;
+                        padding: 10px;
+                        position: relative;
+    
+                        &:after {    
+                            background: none repeat scroll 0 0 transparent;
+                            bottom: 0;
+                            content: "";
+                            display: block;
+                            height: 2px;
+                            left: 50%;
+                            position: absolute;
+                            background: #fff;
+                            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                            width: 0;
+                        }
+    
+                        &:hover:after { 
+                            width: 100%; 
+                            left: 0;
+                        }
+                    }
+                }
+    
+            }
+
+        }
+    }
+
+}
+
+// Media Querys - Mobile
+
+@media only screen and (max-width: 320px) {
+    #header-index {
+        padding: 0 10px;
+        position: relative;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: $align;
+        justify-content: $align;
+        text-align: $align;
+        color: nth($colores, 2);
+    
+        .header-video-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+    
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: nth($colores, 3);        
+            }
+    
+            video {
+                min-height: 100%;
+                min-width: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    
+        .header-content {
+            z-index: 0;
+    
+            .h1-index {
+                color: nth($colores, 2);
+    
+                
+                .Mata-index {
+                    font-family: nth($fonts, 1);
+                    font-size: 37px;
+                }
+    
+                .Automotriz-index {
+                    font-family: nth($fonts, 2);
+                    font-size: 28px;
+                    font-weight: lighter;
+                }
+            }
+    
+            .h2-index {
+                color: nth($colores, 2);
+                font-family: nth($fonts, 2);
+                font-size: 20px;
+                padding-bottom: 20px;
+                font-weight: lighter;
+            }
+    
+            nav {
+                font-family: nth($fonts, 2);
+                color: nth($colores, 2);
+                text-align: $align;
+    
+                ul {
+                    padding-left: 0px;
+    
+                    li {
+                        padding: 0;           
+
+                        a {
+                            line-height: 1.5;
+                            letter-spacing: 3px;
+                            font-family: nth($fonts, 2);
+                            color: nth($colores, 2);
+                            text-align: left;
+                            font-size: 18px;
+                            text-decoration: none;
+                            font-weight: 900;
+                            display: flex;
+                            justify-content: center;
+                        }
+                    }
+        
+                }
+    
+            }
+        }
+    
+    }
+    
+}
+
+@media only screen and (min-width: 321px) and (max-width:375px){
+    #header-index {
+        padding: 0 10px;
+        position: relative;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: $align;
+        justify-content: $align;
+        text-align: $align;
+        color: nth($colores, 2);
+    
+        .header-video-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+    
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: nth($colores, 3);        
+            }
+    
+            video {
+                min-height: 100%;
+                min-width: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    
+        .header-content {
+    
+            .h1-index {
+                color: nth($colores, 2);
+    
+                
+                .Mata-index {
+                    font-family: nth($fonts, 1);
+                    font-size: 38px;
+                }
+    
+                .Automotriz-index {
+                    font-family: nth($fonts, 2);
+                    font-size: 30px;
+                    font-weight: lighter;
+                }
+            }
+    
+            .h2-index {
+                color: nth($colores, 2);
+                font-family: nth($fonts, 2);
+                font-size: 21px;
+                padding-bottom: 20px;
+                font-weight: lighter;
+            }
+    
+            nav {
+                font-family: nth($fonts, 2);
+                color: nth($colores, 2);
+                text-align: $align;
+    
+                ul {
+                    padding-left: 0px;
+    
+                    li {
+                        padding: 0;           
+
+                        a {
+                            line-height: 1.5;
+                            letter-spacing: 3px;
+                            font-family: nth($fonts, 2);
+                            color: nth($colores, 2);
+                            text-align: left;
+                            font-size: 18px;
+                            text-decoration: none;
+                            font-weight: 900;
+                            display: flex;
+                            justify-content: center;
+                        }
+                    }
+        
+                }
+    
+            }
+        }
+    
+    }
+    
+}
+
+@media only screen and (min-width: 376px) and (max-width:425px){
+    #header-index {
+        padding: 0 10px;
+        position: relative;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: $align;
+        justify-content: $align;
+        text-align: $align;
+        color: nth($colores, 2);
+    
+        .header-video-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+    
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: nth($colores, 3);        
+            }
+    
+            video {
+                min-height: 100%;
+                min-width: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    
+        .header-content {
+
+            .h1-index {
+                color: nth($colores, 2);
+    
+                
+                .Mata-index {
+                    font-family: nth($fonts, 1);
+                    font-size: 39px;
+                }
+    
+                .Automotriz-index {
+                    font-family: nth($fonts, 2);
+                    font-size: 36px;
+                    font-weight: lighter;
+                }
+            }
+    
+            .h2-index {
+                color: nth($colores, 2);
+                font-family: nth($fonts, 2);
+                font-size: 24px;
+                padding-bottom: 20px;
+                font-weight: lighter;
+            }
+    
+            nav {
+                font-family: nth($fonts, 2);
+                color: nth($colores, 2);
+                text-align: $align;
+    
+                ul {
+                    padding-left: 0px;
+    
+                    li {
+                        padding: 0;           
+
+                        a {
+                            line-height: 1.5;
+                            letter-spacing: 3px;
+                            font-family: nth($fonts, 2);
+                            color: nth($colores, 2);
+                            text-align: left;
+                            font-size: 18px;
+                            text-decoration: none;
+                            font-weight: 900;
+                            display: flex;
+                            justify-content: center;
+                        }
+                    }
+        
+                }
+    
+            }
+        }
+    
+    }
+    
+}
+
+//Media Querys - Tablet
+
+@media only screen and (min-width: 426px) and (max-width:768px){
+    #header-index {
+        padding: 0 10px;
+        position: relative;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: $align;
+        justify-content: $align;
+        text-align: $align;
+        color: nth($colores, 2);
+    
+        .header-video-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+    
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: nth($colores, 3);        
+            }
+    
+            video {
+                min-height: 100%;
+                min-width: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    
+        .header-content {
+            position: relative;
+            left: -10px;
+    
+            .h1-index {
+                color: nth($colores, 2);
+    
+                
+                .Mata-index {
+                    font-family: nth($fonts, 1);
+                    font-size: 1.5em;
+                }
+    
+                .Automotriz-index {
+                    font-family: nth($fonts, 2);
+                    font-size: 1.3em;
+                    font-weight: lighter;
+                }
+            }
+    
+            .h2-index {
+                color: nth($colores, 2);
+                font-family: nth($fonts, 2);
+                font-size: 1.4em;
+                padding-bottom: 20px;
+                font-weight: lighter;
+                width: 80%;
+                margin: 0 auto;
+            }
+    
+            nav {
+                font-family: nth($fonts, 2);
+                color: nth($colores, 2);
+                text-align: $align;
+    
+                ul {
+                    padding-left: 0px;
+    
+                    li {
+                        padding: 0;           
+
+                        a {
+                            line-height: 1.5;
+                            letter-spacing: 3px;
+                            font-family: nth($fonts, 2);
+                            color: nth($colores, 2);
+                            text-align: left;
+                            font-size: 18px;
+                            text-decoration: none;
+                            font-weight: 900;
+                            display: flex;
+                            justify-content: center;
+                        }
+                    }
+        
+                }
+    
+            }
+        }
+    
+    }
+    
+}

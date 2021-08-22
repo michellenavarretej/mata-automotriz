@@ -1,0 +1,256 @@
+/* Footer */
+
+footer {
+    background-color: nth($colores, 1);
+    color: nth($colores, 2);
+    font-family: nth($fonts, 1);
+    font-size: 23px;
+    font-weight: lighter;
+    width: 100%;
+    max-height: 200px;
+    position: relative;
+
+    .footer-container {
+        padding: 0 3%;
+        display: flex;
+        justify-content: space-between;
+        align-items: $align;
+    
+        .logo-footer {
+            display: flex;
+            align-items: $align;
+        }
+    
+        .text-footer {
+            p {
+                padding-top: 1em;
+            }
+    
+            .images-footer {
+                display: flex;
+    
+                .enlaces-footer {
+                    li {
+                        text-decoration: none;
+                        list-style: none;
+                        display: inline;
+                        transition: all 2s;
+                    
+                        .redes {
+                            width: 100%;
+                            padding: 0 0.4em;
+    
+                            img {
+                                transition: all 2s;
+    
+                                &:hover {
+                                    transform: scale(1.2);
+                                }    
+                            }
+    
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .developer {
+        width: 98%;
+        bottom: 0px;
+        position: absolute;
+        text-align: $align;
+        font-size: 80%;
+        font-family: nth($fonts, 3);
+
+        a {
+            color: nth($colores, 2);
+            text-decoration: none;
+            position: relative;
+
+            &:after {    
+                background: none repeat scroll 0 0 transparent;
+                bottom: 0;
+                content: "";
+                display: block;
+                height: 2px;
+                left: 50%;
+                position: absolute;
+                background: #fff;
+                transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                width: 0;
+            }
+
+            &:hover:after { 
+                width: 100%; 
+                left: 0;
+            }                   
+        }         
+    }    
+}
+
+// Media Querys - Mobile
+
+@media only screen and (max-width: 425px) {
+
+    footer {
+        background-color: nth($colores, 1);
+        color: nth($colores, 2);
+        font-family: nth($fonts, 1);
+        font-size: 23px;
+        font-weight: lighter;
+        width: 100%;
+        height: 130px;
+        position: relative;
+    
+        .footer-container {
+            height: 115px;
+            padding: 0 3%;
+            display: flex;
+            justify-content: space-between;
+            align-items: $align;
+        
+            .logo-footer {
+                display: flex;
+                align-items: $align;
+                
+                img {
+                    display: none;
+                }
+            }
+        
+            .text-footer {
+                p {
+                    display: none;
+                }
+        
+                .images-footer {
+                    display: flex;
+        
+                    .enlaces-footer {
+                        li {
+                            text-decoration: none;
+                            list-style: none;
+                            display: inline;
+                            transition: all 2s;
+                        
+                            .redes {
+                                padding: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        .developer {
+            font-size: 70%;
+            font-family: nth($fonts, 3);
+    
+            a {
+                color: nth($colores, 2);
+                text-decoration: none;
+                position: relative;
+                      
+            }         
+        }    
+    }
+}
+
+// Media Querys - Tablet
+
+@media only screen and (min-width: 426px) and (max-width:768px) {
+
+    footer {
+        background-color: nth($colores, 1);
+        color: nth($colores, 2);
+        font-family: nth($fonts, 1);
+        font-size: 23px;
+        font-weight: lighter;
+        width: 100%;
+        max-height: 200px;
+        position: relative;
+    
+        .footer-container {
+            padding: 0 3%;
+            display: flex;
+            justify-content: space-between;
+            align-items: $align;
+            height: 130px;
+        
+            .logo-footer {
+                display: flex;
+                align-items: $align;
+
+                img {
+                    width: 180px;
+                    position: relative;
+                    top: -10px;
+                }
+            }
+        
+            .text-footer {
+                p {
+                    display: none;
+                }
+        
+                .images-footer {
+
+                    .enlaces-footer {
+
+                        ul {
+                            position: relative;
+                            margin-bottom: 2rem;
+                            
+                            li {
+                                text-decoration: none;
+                                list-style: none;
+                                display: inline;
+                                transition: all 2s;
+                            
+                                .redes {
+                                    padding: 0; 
+                                    text-align: right;       
+                                }
+                            }
+    
+                        }
+                    }
+                }
+            }
+        }
+    
+        .developer {
+            width: 100%;
+            bottom: 0px;
+            position: absolute;
+            text-align: $align;
+            font-size: 80%;
+            font-family: nth($fonts, 3);
+    
+            a {
+                color: nth($colores, 2);
+                text-decoration: none;
+                position: relative;
+    
+                &:after {    
+                    background: none repeat scroll 0 0 transparent;
+                    bottom: 0;
+                    content: "";
+                    display: block;
+                    height: 2px;
+                    left: 50%;
+                    position: absolute;
+                    background: #fff;
+                    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                    width: 0;
+                }
+    
+                &:hover:after { 
+                    width: 100%; 
+                    left: 0;
+                }                   
+            }         
+        }    
+    }
+}

@@ -1,0 +1,131 @@
+/* Sección Blog */
+@import '../base/lists';
+
+#blog {
+    font-family: 'Raleway', sans-serif;
+    color: whitesmoke;
+    background-image: linear-gradient(rgba(5, 7, 12, 0.7), rgba(5, 7, 12, 0.7)), url(../images/fondo-sections.png);
+    background-size: cover;
+    background-position: left;
+
+    .blog-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        margin: 0% auto;
+        padding: 36px 0;
+
+        .blog-1-content {
+            overflow: auto;
+            font-family: 'Encode Sans SC', sans-serif;
+            font-size: 20px;
+            font-weight: 900;
+            height: 330px;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.4);
+
+            .blog-title {
+                padding: 15px;
+                font-size: 30px;
+                font-weight: bolder;
+            }
+            
+            p {
+                font-size: 16px;  
+                
+                .enlace-blog-1 {
+                    
+                    a {
+                        line-height: 1.5;
+                        letter-spacing: 3px;
+                        padding: 3px;
+                        font-size: 20px;
+                        text-decoration: none;
+                        color: nth($colores, 2);
+                        font-weight: 700 ;
+                        font-family: nth($fonts, 2);
+                        transition: all 2s;
+                        position: relative;
+            
+                        &:after {    
+                            background: none repeat scroll 0 0 transparent;
+                            bottom: 0;
+                            content: "";
+                            display: block;
+                            height: 2px;
+                            left: 50%;
+                            position: absolute;
+                            background: #fff;
+                            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                            width: 0;
+                        }
+            
+                        &:hover:after { 
+                            width: 100%; 
+                            left: 0;
+                        }                    
+                    }     
+                } 
+            }   
+        }
+    }
+}
+
+
+
+// Media Querys - Mobile
+
+@media only screen and (max-width:768px) {
+    #blog {
+        padding: 2% 0;
+        font-family: nth($fonts, 3);
+        color: nth($colores, 2);
+        background-image: linear-gradient(rgba(5, 7, 12, 0.7), rgba(5, 7, 12, 0.7)), url(../images/fondo-sections.png);
+        background-size: cover;
+        background-position: left;
+    
+        .blog-1 {
+            flex-wrap: wrap;
+            width: 70%;
+            margin: 0% auto;
+            padding: 36px 0;
+
+            .blog-1-imagen {
+                display: none;
+            }
+    
+            .blog-1-content {
+                font-family: nth($fonts, 2);
+                font-size: 20px;
+                font-weight: 900;
+                padding: 10px 20px;
+                background-color: nth($colores, 3);
+                height: auto;
+    
+                .blog-title {
+                    padding: 15px;
+                    font-size: 30px;
+                    font-weight: bolder;
+                }
+                
+                p {
+                    font-size: 16px;
+        
+                }
+            }
+        }
+    }   
+}
+
+// Media Querys - Laptop
+
+
+// Favor su ayuda, al colocar el atributo de overflow en la consola de google me lo toma bien, pero
+// cuando lo coloco acá no me la toma de ninguna manera
+@media only screen and (min-width:769px) and (max-width:1024px) {
+
+    #blog .blog-1 .blog-1-content {
+        overflow: auto;
+    }
+}

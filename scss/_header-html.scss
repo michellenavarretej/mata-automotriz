@@ -1,0 +1,250 @@
+/* Header Secciones*/
+@import 'base/lists';
+
+#header {
+    padding: 0 10px;
+    color: nth($colores, 2);
+    background-color: nth($colores, 1);
+
+    .content {
+        line-height: 0;
+        display: flex;
+        justify-content: space-around;
+
+        .logo-html {
+            width: 62%;
+
+            .imagen-logo {
+                padding-top: 10px;
+                width: 100px;
+                float: left;            
+            }
+
+            h1 {
+                font-size: 60px;
+                color: nth($colores, 2);
+
+                .Mata {
+                    font-family: nth($fonts, 1);
+                    font-size: 50px;
+                }
+                
+                .Automotriz {
+                    font-family: nth($fonts, 2);
+                    font-size: 40px;
+                    font-weight: lighter;
+                }                
+            }
+
+            h2 {
+                font-family: nth($fonts, 2);
+                font-weight: lighter;
+                color: nth($colores, 2);
+                font-size: 1.25em;
+                position: relative;
+                bottom: 11%;
+            }            
+        }
+
+        .nav-html {
+            padding-bottom: .3%;
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            float: right;
+            width: 79%;
+            height: auto;
+
+            ul {
+                font-family: nth($fonts, 2);
+                color: nth($colores, 2);
+                text-align: left;
+                font-size: 20px;
+
+                li {
+                    display: inline;
+                    padding: 20px;
+
+                    a {
+                        line-height: 1.5;
+                        letter-spacing: 3px;
+                        padding: 3px;
+                        font-size: 20px;
+                        text-decoration: none;
+                        color: nth($colores, 2);
+                        font-weight: 700 ;
+                        font-family: nth($fonts, 2);
+                        transition: all 2s;
+                        position: relative;
+
+                        &:after {    
+                            background: none repeat scroll 0 0 transparent;
+                            bottom: 0;
+                            content: "";
+                            display: block;
+                            height: 2px;
+                            left: 50%;
+                            position: absolute;
+                            background: #fff;
+                            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                            width: 0;
+                        }
+    
+                        &:hover:after { 
+                            width: 100%; 
+                            left: 0;
+                        }                    
+                    }     
+                }
+            }
+            
+        }
+    }
+
+    .nav-mata {
+        background: nth($colores, 1);
+        font-family: nth($fonts, 2);
+        line-height: 1.5;
+        letter-spacing: 3px;
+        font-weight: 700;
+
+        .nav-link {
+            text-align: $align;
+        }
+    }
+}
+
+
+// Media Querys - Mobile - Tablet
+
+@media only screen and (max-width: 768px) {
+    #header {
+        padding: 0 10px;
+        color: whitesmoke;
+        background-color: black;
+    
+        .content {
+            display: none;
+        }
+    
+        .nav-mata {
+            background: nth($colores, 1);
+            font-family: nth($fonts, 2);
+            line-height: 1.5;
+            letter-spacing: 3px;
+            font-weight: 700;
+        }
+    }
+    
+}
+
+//Media Querys - Laptop
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+
+    #header {
+        padding: 0 10px;
+        color: whitesmoke;
+        background-color: black;
+    
+        .content {
+            line-height: 0;
+            display: flex;
+            justify-content: space-around;
+    
+            .logo-html {
+                width: 50%;
+
+                .imagen-logo {
+                    padding-top: 10px;
+                    width: 100px;
+                    float: left;            
+                }
+    
+                h1 {
+                    color: whitesmoke;
+    
+                    .Mata {
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 52px;
+                    }
+                    
+                    .Automotriz {
+                        font-family: 'Encode Sans SC', sans-serif;
+                        font-size: 40px;
+                        font-weight: lighter;
+                    }                
+                }
+    
+                h2 {
+                    font-family: 'Encode Sans SC', sans-serif;
+                    font-weight: lighter;
+                    color: whitesmoke;
+                    font-size: 1.25em;
+                    position: relative;
+                    bottom: 11%;
+                }            
+            }
+    
+            .nav-html {
+                width: 40%;
+            
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    padding: 0 20px;
+
+                    li {
+                        display: inline;
+                        padding: 10px;
+    
+                        a {
+                            line-height: 1.5;
+                            letter-spacing: 3px;
+                            font-size: 17px;
+                            text-decoration: none;
+                            color: whitesmoke;
+                            font-weight: 700 ;
+                            font-family:  'Encode Sans SC', sans-serif;
+                            transition: all 2s;
+    
+                            &:after {    
+                                background: none repeat scroll 0 0 transparent;
+                                bottom: 0;
+                                content: "";
+                                display: block;
+                                height: 2px;
+                                left: 50%;
+                                position: absolute;
+                                background: #fff;
+                                transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                                width: 0;
+                            }
+        
+                            &:hover:after { 
+                                width: 100%; 
+                                left: 0;
+                            }                    
+                        }     
+                    }
+                }
+                
+            }
+        }
+    
+        .nav-mata {
+            display: none;
+        }
+    }
+}
+
+//Media Querys - Desktop
+
+@media only screen and (min-width: 1025px) {
+
+    .nav-mata {
+        display: none;
+    }
+  
+}

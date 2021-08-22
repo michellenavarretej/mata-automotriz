@@ -1,0 +1,110 @@
+/* Trabajos-Index */
+@import '../base/lists';
+
+#trabajos {
+    width: 100%;
+    padding: 40px 0 40px 0;
+    background-color: nth($colores,2);
+
+    .trabajos-content {
+        h3 {
+            a {
+                padding: 2rem 0;
+                font-family: nth($fonts, 1);
+                font-weight: 600;
+                font-size: 2em;
+                text-align: $align;
+                word-spacing: 2%;
+                color: nth($colores, 1);
+                text-decoration: none;
+                display: flex;
+                justify-content: $align;
+                transition: all 2s;
+            
+                &:hover {
+                    transform: scale(1.08);
+                }
+            }
+        }
+    }
+
+    #carouselExampleControls {
+        width: 70%;
+        margin: 0 auto;
+        position: relative;
+     
+        .carousel-inner {
+            width: 100%;
+            height: 400px;
+            margin: 0 auto;
+            object-fit: cover;
+        }
+    }
+
+}
+
+// Media Querys - Mobile
+
+@media only screen and (max-width: 425px) {
+    #trabajos {
+        width: 100%;
+        height: 90vh;
+        background-image: linear-gradient(rgba(5, 7, 12, 0.7), rgba(5, 7, 12, 0.7)), url(../images/fondo-sections.png);
+        background-size: cover;
+        display: flex;
+        align-items: center;
+
+    
+        .trabajos-content {
+            padding-top: 2em;
+            height: 100%;
+
+            h3 {
+                display: flex;
+                align-items: center;
+                width: 70%;
+                margin: auto;
+                height: 50%;
+                position: relative;
+
+                a {
+                    color: nth($colores, 2);
+                    pointer-events: none;
+                }
+            }
+
+            .btn {
+                padding-top: 50px;
+                width: 100%;
+
+                .btn-trabajos {
+                    background-color: nth($colores, 1);
+                    border-radius: 18px;
+                    border: 3px solid nth($colores, 1);
+                    display: inline-block;
+                    cursor: pointer;
+                    color: nth($colores, 2);
+                    font-family: nth($fonts, 2);
+                    font-weight: 900;
+                    font-size: 17px;
+                    padding: 16px 31px;
+                    text-decoration:none;
+                    text-align: center;
+                }          
+     
+            }
+        }
+
+        #carouselExampleControls {
+            display: none;
+        }
+    }
+}
+
+
+// Media Querys - Desktop
+@media only screen and (min-width: 426px) {
+    .btn-trabajos {
+        display: none;
+    }
+}

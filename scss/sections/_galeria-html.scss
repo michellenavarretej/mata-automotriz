@@ -1,0 +1,51 @@
+/* Sección Galería */
+@import '../base/lists';
+
+#galeria {
+    background-color: nth($colores,2);
+
+    h3 {
+        font-family: nth($fonts, 1);
+        font-size: 40px;
+        padding-top: 3%;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .galeria-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 150px;
+        padding: 20px 0 50px 0;
+        grid-gap: 10px;
+        width: 70%;
+        margin: 0 auto;
+
+        .galeria-item {
+
+            .galeria-img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: all 3s;
+
+                &:hover {
+                    transform: scale(1.15);
+                }
+            }
+        } 
+    }
+    
+}
+
+.galeria-item:nth-child(1) {
+    grid-column-start: span 2;
+}
+
+.galeria-item:nth-child(5) {
+    grid-row-start: span 2;
+}
+
+.galeria-item:nth-child(6) {
+    grid-column-start: span 2;
+}

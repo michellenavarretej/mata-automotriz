@@ -1,0 +1,55 @@
+/* Cotización-Index */
+@import '../base/lists';
+
+#cotizacion {
+    background-image: linear-gradient(rgba(5,7,12,0.7), rgba(5,7,12,0.7)), 
+    url(../images/formulario-index.png); 
+    padding: 3% 0;
+    font-family: nth($fonts, 3);
+    background-size: cover;
+    background-position: left;
+    display: flex;
+    justify-content: $align;
+
+    h3 {
+        font-size: 3rem;
+        font-family: nth($fonts, 1 );
+        font-weight: 600;
+        text-align: $align;
+        word-spacing: 2%;
+        color: nth($colores, 2);
+        text-decoration: none;
+        display: flex;
+        justify-content: $align;
+    }
+
+    .form-floating.mb-3{
+        width: 86%;
+        margin: 0 auto;
+    }
+
+    .form-floating-mensaje {
+        .form-control {
+            height: calc(10rem + 2px);
+            line-height: 1.25;
+        }
+    }
+
+    .btn-enviar {
+        width: 85%;
+        margin: 0 auto;
+        
+        p {            
+            background-color: nth($colores, 2);
+            border-radius: 18px;
+            border: 1px solid;
+            display: inline-block;
+            cursor: pointer;
+            color: nth($colores, 1);
+            font-family: nth($fonts, 3);
+            font-size:17px;
+            padding: 10px 20px;
+        }
+    }
+}
+

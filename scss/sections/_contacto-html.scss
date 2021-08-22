@@ -1,0 +1,262 @@
+/* Sección Contacto */
+@import '../base/lists';
+
+#contacto {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 5%;
+    font-family: nth($fonts, 3);
+    color: nth($colores, 2);
+    background-image: linear-gradient(rgba(5, 7, 12, 0.7), rgba(5, 7, 12, 0.7)), url(../images/fondo-sections.png);
+    background-size: cover;
+    background-position: left;
+
+    // Formulario de correo
+    .formulario-contacto {
+        h3 {
+            padding: 2rem 0;
+            font-size: 2.6rem;
+            width: 70%;
+            margin: 0 auto;
+            font-family: nth($fonts, 1);
+            font-weight: 600;
+            text-align: $align;
+            word-spacing: 2%;
+            color: nth($colores, 2);
+            text-decoration: none;
+            display: flex;
+            justify-content: $align;
+        }
+
+        .form-floating-contacto {
+            font-size: 1.5rem;
+            width: 60%;
+            margin: 0 auto;
+
+            .form-floating.mb-3 {
+
+
+                .form-control {
+                    padding: 1rem .75rem;
+                    display: block;
+                    width: 100%;
+                    padding: .375rem .75rem;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    color: #212529;
+                    background-color: #fff;
+                    background-clip: padding-box;
+                    border: 1px solid #ced4da;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                    border-radius: .25rem;
+                    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+                
+                }
+
+                .label-contacto {
+                   color: #4f5154;
+                   font-size: .5em;
+                }
+                
+            }
+        }
+        
+    }
+
+    // Ubicacion
+    .ubicacion {
+        
+        h4 {
+            padding: 2rem 0;
+            font-size: 2.6rem;
+            width: 70%;
+            margin: 0 auto;
+            font-family: nth($fonts, 1);
+            font-weight: 600;
+            text-align: $align;
+            word-spacing: 2%;
+            color: nth($colores,2);
+            text-decoration: none;
+            display: flex;
+            justify-content: $align;
+        }
+    }
+
+    .direccion {
+
+        .direccion-container {
+            display: flex;
+            justify-content: $align;
+            align-items: $align;
+            width: 70%;
+            margin: 0 auto;
+        
+            .mapa {
+                padding: 25px 20px;
+                font-size: 30px;     
+                
+                iframe {
+                    width: 400px;
+                    height: 300px;
+                }
+            }
+
+            .calle{
+                padding: 25px 20px;
+                font-size: 30px;
+                text-align: $align;
+
+                h5 {
+                    padding-bottom: 15px;
+
+                }
+
+                p{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+
+.form-floating>.form-control, .form-floating>.form-select {
+    height: calc(3.5rem + 2px);
+    line-height: 1.25;
+}
+
+.form-floating-mensaje>.form-control, .form-floating>.form-select {
+    height: calc(10rem + 2px);
+    line-height: 1.25;
+}
+
+
+// Media Querys - Mobile
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+    
+#contacto {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 5%;
+    font-family: nth($fonts, 3);
+    color: nth($colores, 2);
+    background-image: linear-gradient(rgba(5, 7, 12, 0.7), rgba(5, 7, 12, 0.7)), url(../images/fondo-sections.png);
+    background-size: cover;
+    background-position: left;
+
+    // Formulario de correo
+    .formulario-contacto {
+        h3 {
+            padding: 2rem 0;
+            font-size: 2.4rem;
+            width: 70%;
+            margin: 0 auto;
+            font-family: nth($fonts, 1);
+            font-weight: 600;
+            text-align: $align;
+            word-spacing: 2%;
+            color: nth($colores, 2);
+            text-decoration: none;
+            display: flex;
+            justify-content: $align;
+        }
+
+        .form-floating-contacto {
+            font-size: 1.5rem;
+            width: 85%;
+            margin: 0 auto;
+
+            .form-floating.mb-3 {
+
+
+                .form-control {
+                    padding: 1rem .75rem;
+                    display: block;
+                    width: 100%;
+                    padding: .375rem .75rem;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    color: #212529;
+                    background-color: #fff;
+                    background-clip: padding-box;
+                    border: 1px solid #ced4da;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                    border-radius: .25rem;
+                    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+                
+                }
+
+                .label-contacto {
+                   color: #4f5154;
+                   font-size: .5em;
+                }
+                
+            }
+        }
+        
+    }
+
+    // Ubicacion
+    .ubicacion {
+        
+        h4 {
+            padding: 1rem 0;
+            font-size: 40px;
+            margin: 0 auto;
+            font-family: nth($fonts, 1);
+            font-weight: 600;
+            text-align: $align;
+            word-spacing: 2%;
+            color: nth($colores,2);
+            text-decoration: none;
+            display: flex;
+            justify-content: $align;
+        }
+    }
+
+    .direccion {
+
+        .direccion-container {
+            display: flex;
+            justify-content: $align;
+            align-items: $align;
+            flex-wrap: wrap;
+            width: 70%;
+            margin: 0 auto;
+        
+            .mapa {
+                padding: 25px 20px;
+                font-size: 30px;    
+                
+                iframe {
+                    width: 300px;
+                    height: 200px;
+                }
+            }
+
+            .calle{
+                padding: 25px 20px;
+                font-size: 30px;
+                text-align: $align;
+
+                h5 {
+                    padding-bottom: 15px;
+
+                }
+
+                p{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+}

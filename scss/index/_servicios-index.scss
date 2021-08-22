@@ -1,0 +1,58 @@
+/* Servicios-Index */
+@import '../base/lists';
+
+#servicios-index {
+    padding: 3% 0;
+    background-color: nth($colores, 1);
+    font-family:  nth($fonts, 3);
+    color: nth($colores, 2);
+
+    h3 {
+        font-size: 3rem;
+        font-family: nth($fonts, 1);
+        font-weight: 600;
+        text-align: $align;
+        word-spacing: 2%;
+        color: nth($colores, 2);
+        text-decoration: none;
+        display: flex;
+        justify-content: $align;
+    }
+
+    .servicios-content {
+        padding: 1.5% 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    
+        .card {
+            
+            .card-img-top {
+                max-height: 21rem;
+            }
+
+            .card-body {
+                background-color: #0b090a;
+                text-align: center;
+                
+                p {
+                    width: 80px;
+
+                    a {
+                        background-color: #0b090a;
+                        border-color: #660708;
+                        transition: all 2s;
+    
+                        &:hover {
+                            transform: scale(1.1);
+                            background-color: saturate($color: #070506, $amount: 20%);
+                        }
+                    }
+    
+                }
+
+            } 
+        }
+    }
+}

@@ -1,0 +1,36 @@
+// Landing page
+@import 'index/header-index';
+@import 'index/trabajos-index';
+@import 'index/servicios-index';
+@import 'index/cotiz-index';
+
+// Sections
+@import 'header-html';
+@import 'sections/nosotros-html';
+@import 'sections/servicios-html';
+@import 'sections/contacto-html';
+@import 'sections/blog-html.scss';
+@import 'sections/galeria-html';
+
+@import 'footer';
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #d6d6d6;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #434343;
+    border-radius: 50px;
+}
+

@@ -1,0 +1,1543 @@
+@charset "UTF-8";
+/* Header-Index */
+.display-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.width {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#header-index {
+  padding: 0 10px;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #dfdbdb;
+}
+#header-index .header-video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#header-index .header-video-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+#header-index .header-video-container video {
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#header-index .header-content {
+  z-index: 0;
+}
+#header-index .header-content .h1-index {
+  color: #dfdbdb;
+}
+#header-index .header-content .h1-index .Mata-index {
+  font-family: "Poppins";
+  font-size: 60px;
+}
+#header-index .header-content .h1-index .Automotriz-index {
+  font-family: "Encode Sans SC";
+  font-size: 50px;
+  font-weight: lighter;
+}
+#header-index .header-content .h2-index {
+  color: #dfdbdb;
+  font-family: "Encode Sans SC";
+  font-size: 1.8em;
+  padding-bottom: 20px;
+  font-weight: lighter;
+}
+#header-index .header-content nav {
+  font-family: "Encode Sans SC";
+  color: #dfdbdb;
+  text-align: center;
+}
+#header-index .header-content nav ul {
+  padding-left: 0px;
+}
+#header-index .header-content nav ul li {
+  display: inline;
+  padding: 10px;
+}
+#header-index .header-content nav ul li a {
+  line-height: 1.5;
+  letter-spacing: 3px;
+  font-family: "Encode Sans SC";
+  color: #dfdbdb;
+  text-align: left;
+  font-size: 1.2em;
+  text-decoration: none;
+  font-weight: 900;
+  padding: 10px;
+  position: relative;
+}
+#header-index .header-content nav ul li a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+#header-index .header-content nav ul li a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+@media only screen and (max-width: 320px) {
+  #header-index {
+    padding: 0 10px;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #dfdbdb;
+  }
+  #header-index .header-video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  #header-index .header-video-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  #header-index .header-video-container video {
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #header-index .header-content {
+    z-index: 0;
+  }
+  #header-index .header-content .h1-index {
+    color: #dfdbdb;
+  }
+  #header-index .header-content .h1-index .Mata-index {
+    font-family: "Poppins";
+    font-size: 37px;
+  }
+  #header-index .header-content .h1-index .Automotriz-index {
+    font-family: "Encode Sans SC";
+    font-size: 28px;
+    font-weight: lighter;
+  }
+  #header-index .header-content .h2-index {
+    color: #dfdbdb;
+    font-family: "Encode Sans SC";
+    font-size: 20px;
+    padding-bottom: 20px;
+    font-weight: lighter;
+  }
+  #header-index .header-content nav {
+    font-family: "Encode Sans SC";
+    color: #dfdbdb;
+    text-align: center;
+  }
+  #header-index .header-content nav ul {
+    padding-left: 0px;
+  }
+  #header-index .header-content nav ul li {
+    padding: 0;
+  }
+  #header-index .header-content nav ul li a {
+    line-height: 1.5;
+    letter-spacing: 3px;
+    font-family: "Encode Sans SC";
+    color: #dfdbdb;
+    text-align: left;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  #header-index {
+    padding: 0 10px;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #dfdbdb;
+  }
+  #header-index .header-video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  #header-index .header-video-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  #header-index .header-video-container video {
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #header-index .header-content .h1-index {
+    color: #dfdbdb;
+  }
+  #header-index .header-content .h1-index .Mata-index {
+    font-family: "Poppins";
+    font-size: 38px;
+  }
+  #header-index .header-content .h1-index .Automotriz-index {
+    font-family: "Encode Sans SC";
+    font-size: 30px;
+    font-weight: lighter;
+  }
+  #header-index .header-content .h2-index {
+    color: #dfdbdb;
+    font-family: "Encode Sans SC";
+    font-size: 21px;
+    padding-bottom: 20px;
+    font-weight: lighter;
+  }
+  #header-index .header-content nav {
+    font-family: "Encode Sans SC";
+    color: #dfdbdb;
+    text-align: center;
+  }
+  #header-index .header-content nav ul {
+    padding-left: 0px;
+  }
+  #header-index .header-content nav ul li {
+    padding: 0;
+  }
+  #header-index .header-content nav ul li a {
+    line-height: 1.5;
+    letter-spacing: 3px;
+    font-family: "Encode Sans SC";
+    color: #dfdbdb;
+    text-align: left;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  #header-index {
+    padding: 0 10px;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #dfdbdb;
+  }
+  #header-index .header-video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  #header-index .header-video-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  #header-index .header-video-container video {
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #header-index .header-content .h1-index {
+    color: #dfdbdb;
+  }
+  #header-index .header-content .h1-index .Mata-index {
+    font-family: "Poppins";
+    font-size: 39px;
+  }
+  #header-index .header-content .h1-index .Automotriz-index {
+    font-family: "Encode Sans SC";
+    font-size: 36px;
+    font-weight: lighter;
+  }
+  #header-index .header-content .h2-index {
+    color: #dfdbdb;
+    font-family: "Encode Sans SC";
+    font-size: 24px;
+    padding-bottom: 20px;
+    font-weight: lighter;
+  }
+  #header-index .header-content nav {
+    font-family: "Encode Sans SC";
+    color: #dfdbdb;
+    text-align: center;
+  }
+  #header-index .header-content nav ul {
+    padding-left: 0px;
+  }
+  #header-index .header-content nav ul li {
+    padding: 0;
+  }
+  #header-index .header-content nav ul li a {
+    line-height: 1.5;
+    letter-spacing: 3px;
+    font-family: "Encode Sans SC";
+    color: #dfdbdb;
+    text-align: left;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  #header-index {
+    padding: 0 10px;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #dfdbdb;
+  }
+  #header-index .header-video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  #header-index .header-video-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  #header-index .header-video-container video {
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #header-index .header-content {
+    position: relative;
+    left: -10px;
+  }
+  #header-index .header-content .h1-index {
+    color: #dfdbdb;
+  }
+  #header-index .header-content .h1-index .Mata-index {
+    font-family: "Poppins";
+    font-size: 1.5em;
+  }
+  #header-index .header-content .h1-index .Automotriz-index {
+    font-family: "Encode Sans SC";
+    font-size: 1.3em;
+    font-weight: lighter;
+  }
+  #header-index .header-content .h2-index {
+    color: #dfdbdb;
+    font-family: "Encode Sans SC";
+    font-size: 1.4em;
+    padding-bottom: 20px;
+    font-weight: lighter;
+    width: 80%;
+    margin: 0 auto;
+  }
+  #header-index .header-content nav {
+    font-family: "Encode Sans SC";
+    color: #dfdbdb;
+    text-align: center;
+  }
+  #header-index .header-content nav ul {
+    padding-left: 0px;
+  }
+  #header-index .header-content nav ul li {
+    padding: 0;
+  }
+  #header-index .header-content nav ul li a {
+    line-height: 1.5;
+    letter-spacing: 3px;
+    font-family: "Encode Sans SC";
+    color: #dfdbdb;
+    text-align: left;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+  }
+}
+/* Trabajos-Index */
+#trabajos {
+  width: 100%;
+  padding: 40px 0 40px 0;
+  background-color: #dfdbdb;
+}
+#trabajos .trabajos-content h3 a {
+  padding: 2rem 0;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 2em;
+  text-align: center;
+  word-spacing: 2%;
+  color: black;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  transition: all 2s;
+}
+#trabajos .trabajos-content h3 a:hover {
+  transform: scale(1.08);
+}
+#trabajos #carouselExampleControls {
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+}
+#trabajos #carouselExampleControls .carousel-inner {
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 425px) {
+  #trabajos {
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(5, 7, 12, 0.7), rgba(5, 7, 12, 0.7)), url(../images/fondo-sections.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+  }
+  #trabajos .trabajos-content {
+    padding-top: 2em;
+    height: 100%;
+  }
+  #trabajos .trabajos-content h3 {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    height: 50%;
+    position: relative;
+  }
+  #trabajos .trabajos-content h3 a {
+    color: #dfdbdb;
+    pointer-events: none;
+  }
+  #trabajos .trabajos-content .btn {
+    padding-top: 50px;
+    width: 100%;
+  }
+  #trabajos .trabajos-content .btn .btn-trabajos {
+    background-color: black;
+    border-radius: 18px;
+    border: 3px solid black;
+    display: inline-block;
+    cursor: pointer;
+    color: #dfdbdb;
+    font-family: "Encode Sans SC";
+    font-weight: 900;
+    font-size: 17px;
+    padding: 16px 31px;
+    text-decoration: none;
+    text-align: center;
+  }
+  #trabajos #carouselExampleControls {
+    display: none;
+  }
+}
+@media only screen and (min-width: 426px) {
+  .btn-trabajos {
+    display: none;
+  }
+}
+/* Servicios-Index */
+#servicios-index {
+  padding: 3% 0;
+  background-color: black;
+  font-family: "Raleway";
+  color: #dfdbdb;
+}
+#servicios-index h3 {
+  font-size: 3rem;
+  font-family: "Poppins";
+  font-weight: 600;
+  text-align: center;
+  word-spacing: 2%;
+  color: #dfdbdb;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+#servicios-index .servicios-content {
+  padding: 1.5% 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+#servicios-index .servicios-content .card .card-img-top {
+  max-height: 21rem;
+}
+#servicios-index .servicios-content .card .card-body {
+  background-color: #0b090a;
+  text-align: center;
+}
+#servicios-index .servicios-content .card .card-body p {
+  width: 80px;
+}
+#servicios-index .servicios-content .card .card-body p a {
+  background-color: #0b090a;
+  border-color: #660708;
+  transition: all 2s;
+}
+#servicios-index .servicios-content .card .card-body p a:hover {
+  transform: scale(1.1);
+  background-color: #080406;
+}
+
+/* Cotización-Index */
+#cotizacion {
+  background-image: linear-gradient(rgba(5, 7, 12, 0.7), rgba(5, 7, 12, 0.7)), url(../images/formulario-index.png);
+  padding: 3% 0;
+  font-family: "Raleway";
+  background-size: cover;
+  background-position: left;
+  display: flex;
+  justify-content: center;
+}
+#cotizacion h3 {
+  font-size: 3rem;
+  font-family: "Poppins";
+  font-weight: 600;
+  text-align: center;
+  word-spacing: 2%;
+  color: #dfdbdb;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+#cotizacion .form-floating.mb-3 {
+  width: 86%;
+  margin: 0 auto;
+}
+#cotizacion .form-floating-mensaje .form-control {
+  height: calc(10rem + 2px);
+  line-height: 1.25;
+}
+#cotizacion .btn-enviar {
+  width: 85%;
+  margin: 0 auto;
+}
+#cotizacion .btn-enviar p {
+  background-color: #dfdbdb;
+  border-radius: 18px;
+  border: 1px solid;
+  display: inline-block;
+  cursor: pointer;
+  color: black;
+  font-family: "Raleway";
+  font-size: 17px;
+  padding: 10px 20px;
+}
+
+/* Header Secciones*/
+#header {
+  padding: 0 10px;
+  color: #dfdbdb;
+  background-color: black;
+}
+#header .content {
+  line-height: 0;
+  display: flex;
+  justify-content: space-around;
+}
+#header .content .logo-html {
+  width: 62%;
+}
+#header .content .logo-html .imagen-logo {
+  padding-top: 10px;
+  width: 100px;
+  float: left;
+}
+#header .content .logo-html h1 {
+  font-size: 60px;
+  color: #dfdbdb;
+}
+#header .content .logo-html h1 .Mata {
+  font-family: "Poppins";
+  font-size: 50px;
+}
+#header .content .logo-html h1 .Automotriz {
+  font-family: "Encode Sans SC";
+  font-size: 40px;
+  font-weight: lighter;
+}
+#header .content .logo-html h2 {
+  font-family: "Encode Sans SC";
+  font-weight: lighter;
+  color: #dfdbdb;
+  font-size: 1.25em;
+  position: relative;
+  bottom: 11%;
+}
+#header .content .nav-html {
+  padding-bottom: 0.3%;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  float: right;
+  width: 79%;
+  height: auto;
+}
+#header .content .nav-html ul {
+  font-family: "Encode Sans SC";
+  color: #dfdbdb;
+  text-align: left;
+  font-size: 20px;
+}
+#header .content .nav-html ul li {
+  display: inline;
+  padding: 20px;
+}
+#header .content .nav-html ul li a {
+  line-height: 1.5;
+  letter-spacing: 3px;
+  padding: 3px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #dfdbdb;
+  font-weight: 700;
+  font-family: "Encode Sans SC";
+  transition: all 2s;
+  position: relative;
+}
+#header .content .nav-html ul li a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+#header .content .nav-html ul li a:hover:after {
+  width: 100%;
+  left: 0;
+}
+#header .nav-mata {
+  background: black;
+  font-family: "Encode Sans SC";
+  line-height: 1.5;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+#header .nav-mata .nav-link {
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  #header {
+    padding: 0 10px;
+    color: whitesmoke;
+    background-color: black;
+  }
+  #header .content {
+    display: none;
+  }
+  #header .nav-mata {
+    background: black;
+    font-family: "Encode Sans SC";
+    line-height: 1.5;
+    letter-spacing: 3px;
+    font-weight: 700;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  #header {
+    padding: 0 10px;
+    color: whitesmoke;
+    background-color: black;
+  }
+  #header .content {
+    line-height: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  #header .content .logo-html {
+    width: 50%;
+  }
+  #header .content .logo-html .imagen-logo {
+    padding-top: 10px;
+    width: 100px;
+    float: left;
+  }
+  #header .content .logo-html h1 {
+    color: whitesmoke;
+  }
+  #header .content .logo-html h1 .Mata {
+    font-family: "Poppins", sans-serif;
+    font-size: 52px;
+  }
+  #header .content .logo-html h1 .Automotriz {
+    font-family: "Encode Sans SC", sans-serif;
+    font-size: 40px;
+    font-weight: lighter;
+  }
+  #header .content .logo-html h2 {
+    font-family: "Encode Sans SC", sans-serif;
+    font-weight: lighter;
+    color: whitesmoke;
+    font-size: 1.25em;
+    position: relative;
+    bottom: 11%;
+  }
+  #header .content .nav-html {
+    width: 40%;
+  }
+  #header .content .nav-html ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 20px;
+  }
+  #header .content .nav-html ul li {
+    display: inline;
+    padding: 10px;
+  }
+  #header .content .nav-html ul li a {
+    line-height: 1.5;
+    letter-spacing: 3px;
+    font-size: 17px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 700;
+    font-family: "Encode Sans SC", sans-serif;
+    transition: all 2s;
+  }
+  #header .content .nav-html ul li a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  #header .content .nav-html ul li a:hover:after {
+    width: 100%;
+    left: 0;
+  }
+  #header .nav-mata {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .nav-mata {
+    display: none;
+  }
+}
+/* Sección Nosotros */
+#nosotros {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 5%;
+  font-family: "Raleway";
+  color: #dfdbdb;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.7), rgba(5, 7, 12, 0.7)), url(../images/fondo-sections.png);
+  background-size: cover;
+  background-position: left;
+}
+#nosotros h2, #nosotros h3, #nosotros h4 {
+  display: flex;
+  justify-content: start;
+  width: 60%;
+  margin: auto;
+  padding: 20px 10px;
+  font-size: 50px;
+  font-weight: 900;
+}
+#nosotros p {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  margin: auto;
+  padding: 20px 10px;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: justify;
+  transition: all 2s;
+}
+#nosotros p:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+  #nosotros {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 5%;
+    font-family: "Raleway";
+    color: #dfdbdb;
+    background-image: linear-gradient(rgba(5, 7, 12, 0.7), rgba(5, 7, 12, 0.7)), url(../images/fondo-sections.png);
+    background-size: cover;
+    background-position: left;
+  }
+  #nosotros h2, #nosotros h3, #nosotros h4 {
+    display: flex;
+    justify-content: start;
+    width: 60%;
+    margin: auto;
+    padding: 20px 10px;
+    font-size: 50px;
+    font-weight: 900;
+  }
+  #nosotros p {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: auto;
+    padding: 20px 10px;
+    font-size: 1em;
+    font-weight: 500;
+  }
+}
+/* Sección Servicios */
+#servicios {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 5%;
+  font-family: "Raleway";
+  color: whitesmoke;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.7), rgba(5, 7, 12, 0.7)), url(../images/fondo-sections.png);
+  background-size: cover;
+  background-position: left;
+}
+#servicios h3 {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 2.6rem;
+  font-family: "Poppins";
+}
+#servicios .servicios-container .limpieza-integral-content, #servicios .servicios-container .pulido-y-correccion-content,
+#servicios .servicios-container .ceramic-coating-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 18px;
+  width: 85%;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 25px;
+}
+#servicios .servicios-container .limpieza-integral-content h3, #servicios .servicios-container .pulido-y-correccion-content h3,
+#servicios .servicios-container .ceramic-coating-content h3 {
+  font-size: 30px;
+  font-family: "Poppins";
+  padding: 0 20px;
+  text-align: center;
+  font-weight: 600;
+  width: 70%;
+  margin: 0 auto;
+}
+#servicios .servicios-container .limpieza-integral-content div h4, #servicios .servicios-container .pulido-y-correccion-content div h4,
+#servicios .servicios-container .ceramic-coating-content div h4 {
+  font-size: 25px;
+  font-weight: normal;
+  padding: 15px 0;
+  text-align: center;
+}
+#servicios .servicios-container .limpieza-integral-content div p, #servicios .servicios-container .pulido-y-correccion-content div p,
+#servicios .servicios-container .ceramic-coating-content div p {
+  padding: 0 30px;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 768px) {
+  #servicios {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 5%;
+    font-family: "Raleway";
+    color: whitesmoke;
+    background-image: linear-gradient(rgba(5, 7, 12, 0.7), rgba(5, 7, 12, 0.7)), url(../images/fondo-sections.png);
+    background-size: cover;
+    background-position: left;
+  }
+  #servicios h3 {
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 2.6rem;
+    font-family: "Poppins";
+  }
+  #servicios .servicios-container .limpieza-integral-content, #servicios .servicios-container .pulido-y-correccion-content,
+#servicios .servicios-container .ceramic-coating-content {
+    flex-wrap: wrap;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 25px;
+  }
+  #servicios .servicios-container .limpieza-integral-content h3, #servicios .servicios-container .pulido-y-correccion-content h3,
+#servicios .servicios-container .ceramic-coating-content h3 {
+    font-size: 30px;
+    font-family: "Poppins";
+    padding: 0 20px;
+    text-align: center;
+    font-weight: 600;
+    width: 70%;
+    margin: 0 auto;
+  }
+  #servicios .servicios-container .limpieza-integral-content div h4, #servicios .servicios-container .pulido-y-correccion-content div h4,
+#servicios .servicios-container .ceramic-coating-content div h4 {
+    font-size: 25px;
+    font-weight: normal;
+    padding: 15px 0;
+    text-align: start;
+  }
+  #servicios .servicios-container .limpieza-integral-content div p, #servicios .servicios-container .pulido-y-correccion-content div p,
+#servicios .servicios-container .ceramic-coating-content div p {
+    padding: 0 30px;
+    text-align: justify;
+  }
+}
+/* Sección Contacto */
+#contacto {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 5%;
+  font-family: "Raleway";
+  color: #dfdbdb;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.7), rgba(5, 7, 12, 0.7)), url(../images/fondo-sections.png);
+  background-size: cover;
+  background-position: left;
+}
+#contacto .formulario-contacto h3 {
+  padding: 2rem 0;
+  font-size: 2.6rem;
+  width: 70%;
+  margin: 0 auto;
+  font-family: "Poppins";
+  font-weight: 600;
+  text-align: center;
+  word-spacing: 2%;
+  color: #dfdbdb;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+#contacto .formulario-contacto .form-floating-contacto {
+  font-size: 1.5rem;
+  width: 60%;
+  margin: 0 auto;
+}
+#contacto .formulario-contacto .form-floating-contacto .form-floating.mb-3 .form-control {
+  padding: 1rem 0.75rem;
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+#contacto .formulario-contacto .form-floating-contacto .form-floating.mb-3 .label-contacto {
+  color: #4f5154;
+  font-size: 0.5em;
+}
+#contacto .ubicacion h4 {
+  padding: 2rem 0;
+  font-size: 2.6rem;
+  width: 70%;
+  margin: 0 auto;
+  font-family: "Poppins";
+  font-weight: 600;
+  text-align: center;
+  word-spacing: 2%;
+  color: #dfdbdb;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+#contacto .direccion .direccion-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+}
+#contacto .direccion .direccion-container .mapa {
+  padding: 25px 20px;
+  font-size: 30px;
+}
+#contacto .direccion .direccion-container .mapa iframe {
+  width: 400px;
+  height: 300px;
+}
+#contacto .direccion .direccion-container .calle {
+  padding: 25px 20px;
+  font-size: 30px;
+  text-align: center;
+}
+#contacto .direccion .direccion-container .calle h5 {
+  padding-bottom: 15px;
+}
+#contacto .direccion .direccion-container .calle p {
+  font-size: 20px;
+}
+
+.form-floating > .form-control, .form-floating > .form-select {
+  height: calc(3.5rem + 2px);
+  line-height: 1.25;
+}
+
+.form-floating-mensaje > .form-control, .form-floating > .form-select {
+  height: calc(10rem + 2px);
+  line-height: 1.25;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  #contacto {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 5%;
+    font-family: "Raleway";
+    color: #dfdbdb;
+    background-image: linear-gradient(rgba(5, 7, 12, 0.7), rgba(5, 7, 12, 0.7)), url(../images/fondo-sections.png);
+    background-size: cover;
+    background-position: left;
+  }
+  #contacto .formulario-contacto h3 {
+    padding: 2rem 0;
+    font-size: 2.4rem;
+    width: 70%;
+    margin: 0 auto;
+    font-family: "Poppins";
+    font-weight: 600;
+    text-align: center;
+    word-spacing: 2%;
+    color: #dfdbdb;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+  }
+  #contacto .formulario-contacto .form-floating-contacto {
+    font-size: 1.5rem;
+    width: 85%;
+    margin: 0 auto;
+  }
+  #contacto .formulario-contacto .form-floating-contacto .form-floating.mb-3 .form-control {
+    padding: 1rem 0.75rem;
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  #contacto .formulario-contacto .form-floating-contacto .form-floating.mb-3 .label-contacto {
+    color: #4f5154;
+    font-size: 0.5em;
+  }
+  #contacto .ubicacion h4 {
+    padding: 1rem 0;
+    font-size: 40px;
+    margin: 0 auto;
+    font-family: "Poppins";
+    font-weight: 600;
+    text-align: center;
+    word-spacing: 2%;
+    color: #dfdbdb;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+  }
+  #contacto .direccion .direccion-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 0 auto;
+  }
+  #contacto .direccion .direccion-container .mapa {
+    padding: 25px 20px;
+    font-size: 30px;
+  }
+  #contacto .direccion .direccion-container .mapa iframe {
+    width: 300px;
+    height: 200px;
+  }
+  #contacto .direccion .direccion-container .calle {
+    padding: 25px 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+  #contacto .direccion .direccion-container .calle h5 {
+    padding-bottom: 15px;
+  }
+  #contacto .direccion .direccion-container .calle p {
+    font-size: 20px;
+  }
+}
+/* Sección Blog */
+#blog {
+  font-family: "Raleway", sans-serif;
+  color: whitesmoke;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.7), rgba(5, 7, 12, 0.7)), url(../images/fondo-sections.png);
+  background-size: cover;
+  background-position: left;
+}
+#blog .blog-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: 0% auto;
+  padding: 36px 0;
+}
+#blog .blog-1 .blog-1-content {
+  overflow: auto;
+  font-family: "Encode Sans SC", sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  height: 330px;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+#blog .blog-1 .blog-1-content .blog-title {
+  padding: 15px;
+  font-size: 30px;
+  font-weight: bolder;
+}
+#blog .blog-1 .blog-1-content p {
+  font-size: 16px;
+}
+#blog .blog-1 .blog-1-content p .enlace-blog-1 a {
+  line-height: 1.5;
+  letter-spacing: 3px;
+  padding: 3px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #dfdbdb;
+  font-weight: 700;
+  font-family: "Encode Sans SC";
+  transition: all 2s;
+  position: relative;
+}
+#blog .blog-1 .blog-1-content p .enlace-blog-1 a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+#blog .blog-1 .blog-1-content p .enlace-blog-1 a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  #blog {
+    padding: 2% 0;
+    font-family: "Raleway";
+    color: #dfdbdb;
+    background-image: linear-gradient(rgba(5, 7, 12, 0.7), rgba(5, 7, 12, 0.7)), url(../images/fondo-sections.png);
+    background-size: cover;
+    background-position: left;
+  }
+  #blog .blog-1 {
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 0% auto;
+    padding: 36px 0;
+  }
+  #blog .blog-1 .blog-1-imagen {
+    display: none;
+  }
+  #blog .blog-1 .blog-1-content {
+    font-family: "Encode Sans SC";
+    font-size: 20px;
+    font-weight: 900;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: auto;
+  }
+  #blog .blog-1 .blog-1-content .blog-title {
+    padding: 15px;
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  #blog .blog-1 .blog-1-content p {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  #blog .blog-1 .blog-1-content {
+    overflow: auto;
+  }
+}
+/* Sección Galería */
+#galeria {
+  background-color: #dfdbdb;
+}
+#galeria h3 {
+  font-family: "Poppins";
+  font-size: 40px;
+  padding-top: 3%;
+  width: 70%;
+  margin: 0 auto;
+}
+#galeria .galeria-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 150px;
+  padding: 20px 0 50px 0;
+  grid-gap: 10px;
+  width: 70%;
+  margin: 0 auto;
+}
+#galeria .galeria-container .galeria-item .galeria-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 3s;
+}
+#galeria .galeria-container .galeria-item .galeria-img:hover {
+  transform: scale(1.15);
+}
+
+.galeria-item:nth-child(1) {
+  grid-column-start: span 2;
+}
+
+.galeria-item:nth-child(5) {
+  grid-row-start: span 2;
+}
+
+.galeria-item:nth-child(6) {
+  grid-column-start: span 2;
+}
+
+/* Footer */
+footer {
+  background-color: black;
+  color: #dfdbdb;
+  font-family: "Poppins";
+  font-size: 23px;
+  font-weight: lighter;
+  width: 100%;
+  max-height: 200px;
+  position: relative;
+}
+footer .footer-container {
+  padding: 0 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer-container .logo-footer {
+  display: flex;
+  align-items: center;
+}
+footer .footer-container .text-footer p {
+  padding-top: 1em;
+}
+footer .footer-container .text-footer .images-footer {
+  display: flex;
+}
+footer .footer-container .text-footer .images-footer .enlaces-footer li {
+  text-decoration: none;
+  list-style: none;
+  display: inline;
+  transition: all 2s;
+}
+footer .footer-container .text-footer .images-footer .enlaces-footer li .redes {
+  width: 100%;
+  padding: 0 0.4em;
+}
+footer .footer-container .text-footer .images-footer .enlaces-footer li .redes img {
+  transition: all 2s;
+}
+footer .footer-container .text-footer .images-footer .enlaces-footer li .redes img:hover {
+  transform: scale(1.2);
+}
+footer .developer {
+  width: 98%;
+  bottom: 0px;
+  position: absolute;
+  text-align: center;
+  font-size: 80%;
+  font-family: "Raleway";
+}
+footer .developer a {
+  color: #dfdbdb;
+  text-decoration: none;
+  position: relative;
+}
+footer .developer a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+footer .developer a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+@media only screen and (max-width: 425px) {
+  footer {
+    background-color: black;
+    color: #dfdbdb;
+    font-family: "Poppins";
+    font-size: 23px;
+    font-weight: lighter;
+    width: 100%;
+    height: 130px;
+    position: relative;
+  }
+  footer .footer-container {
+    height: 115px;
+    padding: 0 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer .footer-container .logo-footer {
+    display: flex;
+    align-items: center;
+  }
+  footer .footer-container .logo-footer img {
+    display: none;
+  }
+  footer .footer-container .text-footer p {
+    display: none;
+  }
+  footer .footer-container .text-footer .images-footer {
+    display: flex;
+  }
+  footer .footer-container .text-footer .images-footer .enlaces-footer li {
+    text-decoration: none;
+    list-style: none;
+    display: inline;
+    transition: all 2s;
+  }
+  footer .footer-container .text-footer .images-footer .enlaces-footer li .redes {
+    padding: 0;
+  }
+  footer .developer {
+    font-size: 70%;
+    font-family: "Raleway";
+  }
+  footer .developer a {
+    color: #dfdbdb;
+    text-decoration: none;
+    position: relative;
+  }
+}
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  footer {
+    background-color: black;
+    color: #dfdbdb;
+    font-family: "Poppins";
+    font-size: 23px;
+    font-weight: lighter;
+    width: 100%;
+    max-height: 200px;
+    position: relative;
+  }
+  footer .footer-container {
+    padding: 0 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 130px;
+  }
+  footer .footer-container .logo-footer {
+    display: flex;
+    align-items: center;
+  }
+  footer .footer-container .logo-footer img {
+    width: 180px;
+    position: relative;
+    top: -10px;
+  }
+  footer .footer-container .text-footer p {
+    display: none;
+  }
+  footer .footer-container .text-footer .images-footer .enlaces-footer ul {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  footer .footer-container .text-footer .images-footer .enlaces-footer ul li {
+    text-decoration: none;
+    list-style: none;
+    display: inline;
+    transition: all 2s;
+  }
+  footer .footer-container .text-footer .images-footer .enlaces-footer ul li .redes {
+    padding: 0;
+    text-align: right;
+  }
+  footer .developer {
+    width: 100%;
+    bottom: 0px;
+    position: absolute;
+    text-align: center;
+    font-size: 80%;
+    font-family: "Raleway";
+  }
+  footer .developer a {
+    color: #dfdbdb;
+    text-decoration: none;
+    position: relative;
+  }
+  footer .developer a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  footer .developer a:hover:after {
+    width: 100%;
+    left: 0;
+  }
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #d6d6d6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #434343;
+  border-radius: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */

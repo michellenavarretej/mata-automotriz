@@ -1,0 +1,125 @@
+/* Sección Servicios */
+@import '../base/lists';
+
+#servicios {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 5%;
+    font-family: nth($fonts, 3);
+    color: whitesmoke;
+    background-image: linear-gradient(rgba(5, 7, 12, 0.7), rgba(5, 7, 12, 0.7)), url(../images/fondo-sections.png);
+    background-size: cover;
+    background-position: left;
+
+    h3 {
+        text-align: $align;
+        padding: 2rem 0;
+        font-size: 2.6rem;
+        font-family: nth($fonts, 1);
+
+    }
+
+    .servicios-container {
+
+        .limpieza-integral-content, .pulido-y-correccion-content,
+        .ceramic-coating-content {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            font-size: 18px;
+            width: 85%;
+            margin: auto;
+            background-color: nth($colores, 3);
+            padding: 25px;
+
+            h3 {
+                font-size: 30px;
+                font-family: nth($fonts, 1);
+                padding: 0 20px;
+                text-align: center;
+                font-weight: 600;
+                width: 70%;
+                margin: 0 auto;    
+    
+            }
+                  
+            div {
+
+                h4 {
+                    font-size: 25px;
+                    font-weight: normal;
+                    padding: 15px 0;
+                    text-align: $align;                
+                }
+
+                p {
+                    padding: 0 30px;
+                    text-align: justify;
+                }
+
+            }
+        }
+    }
+}
+
+
+// Media Querys - Mobile
+
+@media only screen and (max-width:768px) {
+    #servicios {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 5%;
+        font-family: nth($fonts, 3);
+        color: whitesmoke;
+        background-image: linear-gradient(rgba(5, 7, 12, 0.7), rgba(5, 7, 12, 0.7)), url(../images/fondo-sections.png);
+        background-size: cover;
+        background-position: left;
+    
+        h3 {
+            text-align: $align;
+            padding: 2rem 0;
+            font-size: 2.6rem;
+            font-family: nth($fonts, 1);
+    
+        }
+    
+        .servicios-container {
+    
+            .limpieza-integral-content, .pulido-y-correccion-content,
+            .ceramic-coating-content {
+                flex-wrap: wrap;
+                font-size: 18px;
+                background-color: nth($colores, 3);
+                padding: 25px;
+    
+                h3 {
+                    font-size: 30px;
+                    font-family: nth($fonts, 1);
+                    padding: 0 20px;
+                    text-align: center;
+                    font-weight: 600;
+                    width: 70%;
+                    margin: 0 auto;    
+        
+                }
+                      
+                div {
+    
+                    h4 {
+                        font-size: 25px;
+                        font-weight: normal;
+                        padding: 15px 0;
+                        text-align: start;                
+                    }
+    
+                    p {
+                        padding: 0 30px;
+                        text-align: justify;
+                    }
+    
+                }
+            }
+        }
+    }
+}
