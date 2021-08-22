@@ -1,6 +1,6 @@
 # prueba-mata-automotriz
 <h1 align="center">Hi 😄, I'm Michelle Navarrete</h1>
-<h3 align="center">A passionate web developer student from Chile</h3>
+<h3 align="center">A passionate web development student from Chile</h3>
 
 - 🔭 I’m currently working on **Mata Automotriz**
 
