@@ -1245,8 +1245,7 @@
 
 @media only screen and (max-width: 768px) {
   #blog {
-    height: 100vh;
-    padding: 2% 0;
+    padding: 2.3% 0;
     font-family: "Raleway";
     color: #dfdbdb;
     background-image: linear-gradient(rgba(5, 7, 12, 0.7), rgba(5, 7, 12, 0.7)), url(../images/fondo-sections.png);
