@@ -704,7 +704,7 @@
   width: 0;
 }
 #header .content .nav-html ul li a:hover:after {
-  width: 100%;
+  width: auto;
   left: 0;
 }
 #header .nav-mata {
