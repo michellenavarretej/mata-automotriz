@@ -78,6 +78,7 @@
 
 @media only screen and (max-width:768px) {
     #blog {
+        height: 100vh;
         padding: 2% 0;
         font-family: nth($fonts, 3);
         color: nth($colores, 2);

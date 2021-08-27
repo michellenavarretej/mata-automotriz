@@ -1245,6 +1245,7 @@
 
 @media only screen and (max-width: 768px) {
   #blog {
+    height: 100vh;
     padding: 2% 0;
     font-family: "Raleway";
     color: #dfdbdb;
