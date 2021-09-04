@@ -554,27 +554,27 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-#servicios-index .servicios-content .card {
+#servicios-index .servicios-content .card-servicios.card.tex-center {
   width: 302px;
 }
-#servicios-index .servicios-content .card .card-img-top {
+#servicios-index .servicios-content .card-servicios.card.tex-center .card-img-top {
   height: 450px;
   width: 300px;
 }
-#servicios-index .servicios-content .card .card-body {
+#servicios-index .servicios-content .card-servicios.card.tex-center .card-body {
   background-color: #0b090a;
   text-align: center;
 }
-#servicios-index .servicios-content .card .card-body p {
+#servicios-index .servicios-content .card-servicios.card.tex-center .card-body p {
   height: 80px;
   width: auto;
 }
-#servicios-index .servicios-content .card .card-body p a {
+#servicios-index .servicios-content .card-servicios.card.tex-center .card-body p a {
   background-color: #0b090a;
   border-color: #660708;
   transition: all 2s;
 }
-#servicios-index .servicios-content .card .card-body p a:hover {
+#servicios-index .servicios-content .card-servicios.card.tex-center .card-body p a:hover {
   transform: scale(1.1);
   background-color: #080406;
 }
