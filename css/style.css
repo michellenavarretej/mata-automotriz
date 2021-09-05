@@ -1520,6 +1520,12 @@ footer .developer a:hover:after {
     left: 0;
   }
 }
+#errorpage {
+  background-color: black;
+  color: whitesmoke;
+  font-family: "Azeret Mono", monospace;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
